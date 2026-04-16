@@ -1,6 +1,6 @@
 
 # Loops
-# While -> "Mientras" sea verdadero has tal cosa
+# While -> "Mientras" sea verdadero, has tal cosa
 '''Aqui vemos como my_condition vale 0 como es menor a 10 hace print a my_condition
 y luego le suma 1 por lo que en la siguiente ya no vale 0 sino 1, de igual forma es menor a 10
 y hace print a my_condition y le vuelve a sumar 1 por lo que en la siguiente ya no vale 1 sino 2
@@ -37,7 +37,7 @@ while True: # Este bucle se repite "para siempre" hasta que yo le diga que pare 
 '''
 
 
-# For -> "Por cada" lo que sea hasta tal cosa
+# For -> "Por cada" lo que sea, has tal cosa
 my_list = [35, 24, 62, 52, 30, 30, 17]
 for element in my_list: # Por cada lemento en mi lista imprime el elemento
     print(element)
