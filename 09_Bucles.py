@@ -22,9 +22,8 @@ while my_condition < 20: # En teoria se ejecuta hasta 19 el cual es meonor a 20
     print(my_condition) # Entonces  mostramos que my_condition quedo en 14
 
 
-# Si quieres ver la ejecucion del ejemplo quitale las comillas de comentario
-'''
-# Ejemplo del while
+
+# Ejemplo del while infinito hasta que den el tipo de dato que requerimos
 print("Programa para pedir nombre\n")
 while True: # Este bucle se repite "para siempre" hasta que yo le diga que pare porque es true
     nombre = input("Por favor ingresa tu nombre: ")
@@ -34,7 +33,7 @@ while True: # Este bucle se repite "para siempre" hasta que yo le diga que pare 
     else: # Sino significa que no nos dio true ya ingreso un dato que no es letra da false osea se repite todo hasta que lo de bien
         print("Error: Solo se permiten letras. No uses números ni símbolos.")
         print("Inténtalo de nuevo.\n")
-'''
+
 
 
 # For -> "Por cada" lo que sea, has tal cosa
@@ -74,7 +73,7 @@ else:
 my_dict = {"Nombre": "Brais", "Apellido": "Moure", "Edad": 35, 1: "Python"}
 for element in my_dict: # Por cada elemento en mi dict imprime el elemento
     print(element)
-    if element == "Edad": # Si el elemento es edad continua osea con todos hace el print de "se ejecuta" menos con edad
+    if element == "Edad": # Si el elemento es edad continua osea a todos les da el print de "se ejecuta" menos a edad
         continue
     print("Se ejecuta")
 else:

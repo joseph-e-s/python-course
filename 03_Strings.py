@@ -103,4 +103,5 @@ print(language.count("t")) # recorre todo el str contando cuántas veces aparece
 print(language.isnumeric()) # imprime un boolean, dice si es un numero o no 
 print(language.isupper()) # imprime un boolean, dice si todas las letras de un str son mayusculas
 print(language.startswith("In")) # imprime un boolean, nos dice si la variable empieza con... osea lo que le digamos
-print("In" == "in")  # No es lo mismo
+# ("In" == "in")  # No es lo mismo
+print(language.isalpha()) # imprime un boolean, dice si son solo letras 
