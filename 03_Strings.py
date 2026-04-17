@@ -16,6 +16,13 @@ print(my_second_line_string)
 my_third_line_string = "\nEste es un String con salto de línea al inicio"
 print(my_third_line_string)
 
+# Podemos evitarlo y quedarnos en la misma linea con varios prints gracias a (end=" ")
+print("Hola")
+print("mundo") # Imprime el "Hola" y "Mundo" en distintas lineas, ya que son dos prints
+#Escribimos end=" " para que no baje a la línea de abajo, sino que deje un espacio y continue
+print("Hola", end=" ")
+print("mundo")  # Imprime: Hola mundo
+
 # \t hace una tabulacion a la linea osea la adelanta un poco
 my_tab_string = "\tEste es un String con tabulación"
 print(my_tab_string)
