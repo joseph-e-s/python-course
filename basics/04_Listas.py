@@ -93,6 +93,10 @@ print(my_new_list)
 my_new_list.sort()
 print(my_new_list)
 
+my_list = ["h", "o", "l", "a"]
+result = "".join(my_list) # join(): une elementos de una lista en un solo string 
+print(result)  # hola 
+
 
 # Sublistas
 print(my_new_list[1:3]) # Imprime los elementos de esas posiciones aqui seria el 1 y 2
