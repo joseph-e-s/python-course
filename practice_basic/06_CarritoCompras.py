@@ -34,7 +34,7 @@ while True:
 
     carrito.append({"nombre": producto, "precio": precio})
 
-# Mostrar resultados
+
 if len(carrito) == 0:
     print("\nNo se agregaron productos.")
 else:
@@ -42,16 +42,14 @@ else:
     total = 0
     producto_mas_caro = carrito[0]
 
-    for item in carrito:
-        print(f"- {item['nombre']}: {item['precio']}")
-        total += item["precio"]
+for item in carrito:
+    print(f"- {item['nombre']}: {item['precio']}")
+    total += item["precio"]
 
-        if item["precio"] > producto_mas_caro["precio"]:
-            producto_mas_caro = item
 
-    print(f"\nTotal: {total}")
-    print(f"Producto más caro: {producto_mas_caro['nombre']}")
-            
+if item["precio"] > producto_mas_caro["precio"]:
+    producto_mas_caro = item
 
-        
-    
+
+print(f"Total: {total}")
+print(f"Producto más caro: {producto_mas_caro['nombre']}")
