@@ -10,7 +10,7 @@ Encontrar:
 numeros_almacenados = []  
 
 while True:
-    numeros_usuario = input("Digite números separados por espacio (o 'fin'): ")
+    numeros_usuario = input("Ingrese un numero a la vez (o 'fin' para calcular y salir): ")
 
     if not numeros_usuario:
         print("Error: no se puede realizar la operacion sin numeros.\n")
@@ -38,16 +38,19 @@ while True:
         continue
 
     numeros_almacenados.extend(numeros_validos)
-    print(f"Números guardados: {numeros_almacenados} (total: {len(numeros_almacenados)})\n")
+    print(f"Números guardados: {numeros_almacenados} (total: {len(numeros_almacenados)})")
 
     if len(numeros_almacenados) < 2:
-        print("Sigue ingresando números (necesitas al menos 2).\n")
+        print("*Sigue ingresando números (necesitas al menos 2)*\n")
 
 
 numero_ganador = 0
 veces_ganador = 0
+ya_contados = []
 
 for num in numeros_almacenados:
+    if num in ya_contados:
+        continue
     contador = 0
 
     for n in numeros_almacenados:
@@ -58,4 +61,9 @@ for num in numeros_almacenados:
         veces_ganador = contador
         numero_ganador = num
 
-print(f"El que mas se repite es el {numero_ganador} se repite {veces_ganador} veces.\n")
+    ya_contados.append(num)
+
+if veces_ganador == 1:
+    print("No hay números repetidos, todos aparecen una sola vez.\n")
+else:
+    print(f"El numero que mas se repite es el {numero_ganador} este se repite {veces_ganador} veces.\n")
