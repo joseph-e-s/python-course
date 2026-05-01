@@ -105,7 +105,7 @@ print(language.isupper()) # imprime un boolean, dice si todas las letras de un s
 print(language.startswith("In")) # imprime un boolean, nos dice si la variable empieza con... osea lo que le digamos
 # ("In" == "in")  # No es lo mismo
 print(language.isalpha()) # imprime un boolean, dice si son solo letras 
-print(language.split()) # Convierte una cadenas de str en una lista cada palabra separa con un especio de otra es un elemento de esa lista
+print(language.split()) # Convierte una cadenas de str en una lista, cada palabra separada con un especio de otra es un elemento de esa lista
 print(language.isdigit())# devuelve True si TODOS los caracteres de la cadena son dígitos numéricos (0-9).
 
 # Diferencia entre append y extend
