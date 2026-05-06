@@ -13,11 +13,28 @@ Validá que el precio sea número (no seas salvaje).
 Nada de interfaces fancy, puro input y print.'''
 
 
+print("\n*Registro de productos*")
+
 carrito = []
 
 while True:
+    print("-" * 50)
     producto = input("Ingrese producto (o 'fin' para terminar): ").strip()
-    
+
+    if not producto:
+        print("Error: ingrese un producto\n")
+        continue
+
+    es_valida = True    
+    for letra in producto:
+        if letra != " " and not letra.isalpha():
+            print("Error: solo se admiten letras\n")
+            es_valida = False
+            break           
+
+    if not es_valida:
+        continue 
+
     if producto.lower() == "fin":
         break
 
@@ -26,11 +43,11 @@ while True:
                 precio_str = input(f"Ingrese el precio de '{producto}': ")  
                 precio = float(precio_str)  
                 if precio < 0:
-                    print("El precio no puede ser negativo.")
+                    print("Error: El precio no puede ser negativo.\n")
                     continue 
                 break
             except ValueError:
-                print("Ingrese un número válido.")
+                print("Error: Ingrese un número válido.\n")
 
     carrito.append({"nombre": producto, "precio": precio})
 
@@ -52,4 +69,4 @@ if item["precio"] > producto_mas_caro["precio"]:
 
 
 print(f"Total: {total}")
-print(f"Producto más caro: {producto_mas_caro['nombre']}")
+print(f"Producto más caro: {producto_mas_caro['nombre']}\n")
