@@ -3,11 +3,10 @@
 Vas a hacer un programa que diga si dos palabras o frases son anagramas.
 Un anagrama es cuando dos palabras o frases tienen exactamente las mismas letras, pero ordenadas diferente.
 *Requisitos:
--Pedir dos palabras o frases
+1-Pedir dos palabras o frases
 Ignorar:
--Espacios
--Mayúsculas/minúsculas
--Determinar si son anagramas 
+-Espacios, Mayúsculas/minúsculas
+2-Determinar si son anagramas 
 Ejemplo fácil: amor → roma \ listen → silent \ raton → antro'''
 
 print("\n*Programa para detectar anagramas*")

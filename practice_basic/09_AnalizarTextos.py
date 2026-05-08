@@ -2,11 +2,11 @@
 '''Ejercicio: Analizador de texto básico
 Vas a hacer un programa que analice una frase que el usuario escriba.
 *Requisitos:
-Pedir una frase al usuario
--Mostrar:
--Cantidad total de caracteres (sin contar espacios)
--Cantidad de palabras
--Cuántas veces aparece una letra específica (que el usuario elija)'''
+1- Pedir una frase al usuario
+2-Mostrar:
+3-Cantidad total de caracteres (sin contar espacios)
+4-Cantidad de palabras
+5-Cuántas veces aparece una letra específica (que el usuario elija)'''
 
 print("\n*Analizador de textos*")
 print("-" * 30)

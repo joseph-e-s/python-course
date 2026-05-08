@@ -2,8 +2,8 @@
 '''Contador de gastos del día
 Vas a hacer un programa donde el usuario va metiendo gastos y al final le dices cuánto gastó.
 *Requisitos:
--Pedir gastos uno por uno (números)
--El usuario puede escribir "fin" para terminar
+1-Pedir gastos uno por uno (números)
+2-El usuario puede escribir "fin" para terminar
 Mostrar:
 -Total gastado
 -Cantidad de gastos ingresados

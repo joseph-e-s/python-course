@@ -3,11 +3,10 @@
 Un palíndromo es una palabra o frase que se lee igual al derecho y al revés.
 Ejemplo: “reconocer” | “anita lava la tina”
 *Requisitos:
--Pedir una frase al usuario
+1-Pedir una frase al usuario
 Ignorar:
--Espacios
--Mayúsculas/minúsculas
--Determinar si es palíndromo o no'''
+-Espacios, Mayúsculas/minúsculas
+2-Determinar si es palíndromo o no'''
 
 
 

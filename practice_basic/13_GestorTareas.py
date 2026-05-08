@@ -8,27 +8,12 @@ Mostrar un menú en bucle:
 3. Marcar tarea como completada
 4. Eliminar tarea
 5. Salir
-
-🔹 Funcionalidad:
-1️⃣ Agregar tarea
-El usuario escribe una tarea
-Se guarda en una lista
-2️⃣ Ver tareas
-Mostrar todas numeradas
-Ejemplo:
-1. Estudiar Python [Pendiente]
-2. Hacer ejercicio [Completada]
-3️⃣ Marcar como completada
-El usuario elige el número
-Cambia su estado
-4️⃣ Eliminar tarea
-El usuario elige el número
-Se borra'''
+'''
 
 lista_tareas = []
 
 while True:
-    print()
+    print("-" * 35)
     print("1 → Agregar tarea")
     print("2 → Ver tareas")
     print("3 → Marcar como completada")

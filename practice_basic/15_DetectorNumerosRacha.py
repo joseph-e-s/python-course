@@ -1,17 +1,18 @@
 
 '''Ejercicio: Detector de racha más larga
 El usuario mete números separados por espacio y tú debes:
-Encontrar la racha más larga de números consecutivos iguales
--Ejemplo:
+1-Encontrar la racha más larga de números consecutivos iguales
+Ejemplo:
 # Entrada
-1 1 1 2 2 3 3 3 3 1
+1 1 2 2 3 3 3 3
 # Salida:
 La racha más larga es de 4 con el número 3'''
 
-
+print("\n*Programa para encontrar la racha mas larga*")
 lista_numeros = []
 
 while True:
+    print("-" * 65)
     numeros_usuario = input("Ingrese un numero a la vez (o 'fin' para calcular y salir): ").strip()
 
     if not numeros_usuario:

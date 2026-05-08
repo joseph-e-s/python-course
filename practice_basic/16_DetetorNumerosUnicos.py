@@ -1,17 +1,19 @@
 
 '''Ejercicio: Detector de números únicos
-🔹Objetivo
+*Objetivo:
 Hacer un programa que:
--Pida números (uno por uno o varios, tú decides)
--Los guarde en una lista
--Cuando el usuario escriba fin:
--Muestre qué números NO se repiten
-Y cuántos son'''
+1- Pida números (uno por uno o varios, tú decides)
+2- Los guarde en una lista
+3- Cuando el usuario escriba fin:
+4- Muestre qué números NO se repiten
+5- Y cuántos son'''
 
-print("\n*Programa para encontrar numeros unicos*\n")
+
+print("\n*Programa para encontrar numeros unicos*")
 lista_numeros = []
 
 while True:
+    print("-" * 50)
     numero_usuario = input("Digite un numero o (fin) para salir y calcular: ")
 
     if not numero_usuario:

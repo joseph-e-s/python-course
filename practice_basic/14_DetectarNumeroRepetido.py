@@ -2,14 +2,14 @@
 '''Ejercicio: Detector de número más repetido
 Vas a hacer un programa que encuentre qué número se repite más en una lista que el usuario ingrese.
 *Requisitos:
--Pedir números separados por espacio
--Convertirlos a lista de enteros
-Encontrar:
--El número que más se repite'''
+1-Pedir números separados por espacio
+2-Convertirlos a lista de enteros
+3- Encontrar: El número que más se repite'''
 
 numeros_almacenados = []  
 
 while True:
+    print("-" * 60)
     numeros_usuario = input("Ingrese un numero a la vez (o 'fin' para calcular y salir): ")
 
     if not numeros_usuario:
@@ -44,8 +44,8 @@ while True:
         print("*Sigue ingresando números (necesitas al menos 2)*\n")
 
 
-numero_ganador = 0
-veces_ganador = 0
+numero_mas_repetido = 0
+veces_que_se_repite = 0
 ya_contados = []
 
 for num in numeros_almacenados:
@@ -57,13 +57,13 @@ for num in numeros_almacenados:
         if n == num:
             contador += 1
 
-    if contador > veces_ganador:
-        veces_ganador = contador
-        numero_ganador = num
+    if contador > veces_que_se_repite:
+        veces_que_se_repite = contador
+        numero_mas_repetido = num
 
     ya_contados.append(num)
 
-if veces_ganador == 1:
+if veces_que_se_repite == 1:
     print("No hay números repetidos, todos aparecen una sola vez.\n")
 else:
-    print(f"El numero que mas se repite es el {numero_ganador} este se repite {veces_ganador} veces.\n")
+    print(f"El numero que mas se repite es el {numero_mas_repetido} este se repite {veces_que_se_repite} veces.\n")
