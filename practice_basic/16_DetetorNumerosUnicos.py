@@ -62,16 +62,3 @@ if cantidad_no_repiten == 0:
 else:
     print(f"Los numeros unicos son: {numeros_unicos}")
     print(f"Cantidad de numeros unicos: ({cantidad_no_repiten})")
-
-    """
-    Ejemplo de salida:
-    *Programa para encontrar numeros unicos*
-    -
-    Digite un numero o (fin) para salir y calcular: 1
-    Digite un numero o (fin) para salir y calcular: 2
-    Digite un numero o (fin) para salir y calcular: 3
-    Digite un numero o (fin) para salir y calcular: fin
-    Calculando...
-    Los numeros unicos son: [1, 2, 3]
-    Cantidad de numeros unicos: (3)
-    """
